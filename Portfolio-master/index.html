@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/nmcss.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/phaser/2.6.2/phaser.min.js'></script> -->
+</head>    
+<body> 
+    <header>
+    </header>
+    <div class="Top-Container">
+        <div class="Right-Side">
+            <!-- <canvas id="swarm"></canvas> -->
+            <svg class="firstSVG" height="100%" viewBox="-150 200 850 786" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g class="cardPos">
+                    <g id="drawing2">
+                        <defs>
+                            <filter id="f1" x="0" y="0" width="200%" height="200%">
+                              <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+                              <feColorMatrix class="cMatrix" result="matrixOut" in="offOut" type="matrix"
+                                values="0.24 0 0 0 0
+                                        0 0.59 0 0 0 
+                                        0 0 0.73 0 0 
+                                        0 0 0 0.5 0" />
+                              <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="10" />
+                              <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                            </filter>
+                          </defs>
+                        <g id="card4" class="card2">
+                            <path id="rect3727-8" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5"filter="url(#f1)" />
+                        </g>
+                        <g id="card3" class="card2">
+                            <path id="rect3727-8_2" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                        <g id="card2" class="card2">
+                            <path id="rect3727-8_3" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z" fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                        <g id="card1" class="card2 flip-card-front">
+                            <path id="rect3727-8_4" d="M255.797 275.847L255.277 509.531C255.256 518.787 262.2 526.306 270.785 526.325L577.823 527.008C586.409 527.028 593.386 519.54 593.406 510.284L593.927 276.6C593.947 267.344 587.004 259.825 578.418 259.806L271.38 259.122C262.794 259.103 255.817 266.591 255.797 275.847Z"  fill="rgb(241, 239, 239)" stroke="rgba(61, 151, 187, 0.233)" stroke-width="5" filter="url(#f1)"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <div class="menu-options">
+                <div class="option-container">
+                    <div class="option-1">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="option1">Hello Goodbye</span>
+                        </span>
+                    </div>
+                    <div class="option-2">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="option2">Hello Goodbye</span>
+                        </span>
+                    </div>
+                    <div class="option-3">
+                        <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="option3">Hello Goodbye</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="Left-Side">
+            <canvas id="c">   
+            </canvas>
+            <div class="h1" data-target-resolver></div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="l-e-box">
+            <div class="l-effect">
+                <div class="laser-box">
+                    <img src="img/laserbeam.png" class="laser-beam" alt="laser">
+                </div>
+            </div>
+            <div class="title">
+                <span class="write">PORTFOLIO</span>
+                <span aria-hidden="true" class="laser">PORTFOLIO</span>
+            </div>
+        </div>
+        <div class="h2">ss SCROLL ss</div>
+    </div>
+    <div class="bottom2"></div>
+    <div class="bottom3"></div>
+    <div class="bottom4"></div>
+    <!-- <a href="test.html">Test page</a> -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/cardMenu.js"></script>
+    <script src="js/textEffect.js"></script>
+    <!-- <script src="js/laserBeam.js"></script> -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+</body>
+</html>
